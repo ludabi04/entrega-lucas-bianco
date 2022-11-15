@@ -193,7 +193,7 @@ body {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<< PRODUCTOS PARA CELU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .productos {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
 }
 .imagen-producto {
