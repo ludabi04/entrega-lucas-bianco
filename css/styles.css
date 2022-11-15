@@ -214,14 +214,18 @@ body {
 
 div iframe {
     align-items: center;
-    margin: auto;
-    width: 50%;
-    padding: 1rem;
+    height: 50%;
+    width: 100%;
+    
 }
 
 .como-llegar1 {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
+}
+
+.como-llegar1 span {
+    display: none;
 }
 
 legend {
@@ -451,7 +455,8 @@ legend {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1rem;
+        align-items: center;
+        padding-left: 1rem;
         
     }
 
@@ -610,7 +615,7 @@ legend {
         font-size: 15px;
     }
 
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<FORMULARIO DE CONTACTO COMPU<<<<<<<<<<<<<<<<<<<<<*/
+    /*<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO COMPU<<<<<<<<<<<<<<<<<<<<<*/
     .menu-item {
         display: none;
     }
@@ -644,10 +649,16 @@ legend {
     }
 
     div iframe {
-        box-shadow: 1px 1px 10px rgb(227, 222, 222);
+        box-shadow: 1px 1px 20px rgb(227, 222, 222);
+        width: 500px;
+        height: 300px;
     }
     .por-whatsapp {
         display: none;
+    }
+
+    .como-llegar1 span {
+        display: inline;
     }
 
     /*FORMULARIO*/
