@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+
+body {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(191deg, #8BC6EC 0%, #3b3e56 100%);
+    ;
+}
+
+/*>>>>>>>>>>>>>> QUERIE PARA CELU<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<INDEX CELU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-image: linear-gradient(90deg, #8BC6EC 0%, #bdc1e1 100%);
+}
+
+.titulo-nav {
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
+.titulo-index {
+    padding: 1rem;
+}
+
+.logo_empresa {
+    display: none;
+}
+
+.contendedor-index {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.carousel {
+    display: none;
+}
+
+.intro {
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.img-local {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+}
+
+.horarios {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.como-llegar {
+    display: none;
+}
+
+.imagen-apertura {
+    justify-content: center;
+}
+
+.img-horarios {
+    width: 60%;
+    padding-top: 1rem;
+}
+
+.link-directo-mapa {
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: wheat;
+}
+
+.link-directo-mapa:hover {
+    color: rgb(224, 171, 72);
+    text-shadow: 1px 1px 1px white;
+}
+
+.detalle-horarios {
+    justify-content: center;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<QUIENES SOMOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.video {
+    display: none;
+}
+
+.premio {
+    display: none;
+}
+.titulo-quienes-somos {
+    text-align: center;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.tipo-cortes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagen-cortes {
+    width: 100%;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< PRODUCTOS PARA CELU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.productos {
+    flex-direction: column;
+    padding: 3rem;
+    text-align: center;
+}
+.imagen-producto {
+    width: 300px;
+    height: 200px;
+}
+
+
+.sugerencia-trabajos {
+    text-align: center;
+
+}
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.menu-item {
+    font-size: x-large;
+}
+
+.mensaje-final p {
+    text-align: center;
+}
+.donde-estamos-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div iframe {
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 60%;
+    padding: 1rem;
+}
+
+.como-llegar1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+legend {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.formulario {
+    display: none;
+}
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.lista-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 1rem;
+}
+
+.logos {
+    list-style: none;
+}
+
+.logo-redes {
+    width: 30px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<MEDIA QUERIES PARA COMPU<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<INDEX COMPU MEDIA QUERI<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media screen and (min-width:992px) {
+
+    /* PAGINA PRINCIPAL QUERIE*/
+    .logo_empresa {
+        display: block;
+        width: 100%;
+        max-height: 56px;
+    }
+
+
+    .todos-testimonios {
+        display: block;
+    }
+
+    .titulo-nav,
+    .nav-item {
+        text-shadow: 1px 1px 1px rgb(179, 179, 237);
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+    
+    .carousel-indicators {
+        z-index: 1;
+    }
+    .contenedor-index {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel {
+        display: block;
+        height: 700px !important;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        justify-content: center !important;
+        
+    }
+
+    .carousel-caption {
+        opacity: 0.5;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+        position: sticky;
+        
+    }
+    .carousel-inner {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+
+    .carousel-item {
+        height: 100% !important;
+        float: none !important;
+        width: 70% !important;
+        margin-right: 0px !important;
+    }
+
+    .intro {
+        align-items: center;
+        max-width: 50%;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+    }
+
+    .detalle-horarios {
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 1px rgb(21, 21, 116);
+    }
+
+    .img-horarios {
+        width: 40%;
+        padding-top: 1rem;
+    }
+    .horarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .link-directo-mapa {
+        display: none;
+    }
+
+    .como-llegar {
+        display: block;
+        width: 100%;
+        filter: drop-shadow(1px 1px 1px black);
+    }
+
+    .como-llegar p {
+        padding: 1rem;
+        text-shadow: 1px 1px 1px rgb(24, 22, 184);
+        font-size: 2rem;
+    }
+    
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<QUIENES SOMOS PARA COMPU<<<<<<<<<<<<<<<<<<*/
+
+    
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr ;
+        grid-template-areas:
+            "presentation presentation presentation"
+            "video video article"
+            "premio premio premio";
+        gap: 2rem;
+    }
+
+    .presentation {
+        grid-area: presentation;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .titulo-quienes-somos {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-shadow: 1px 1px 1px black;
+        
+    }
+
+    .video {
+        grid-area: video;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        
+    }
+
+    .video video {
+        width: 80%;
+    }
+
+    .article {
+        grid-area: article;
+        padding-right: 1rem;
+    }
+
+    .novedades {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .premio {
+        display: block;
+        grid-area: premio;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        border: 2px double  rgb(49, 15, 184);
+        box-shadow: 1px 1px 1px rgb(106, 106, 231);
+    }
+
+    .imagenes-premios, .detalle-premios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .img-premio {
+        width: 5%;
+        display: inline;
+        filter: drop-shadow(1px 1px 1px black);
+        animation-name: premio;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+    }
+
+    @keyframes premio {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    .detalle {
+        max-width: 25%;
+        text-align: center;
+    }
+
+
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA COMPU<<<<<<<<<<<<<<<<<<<<<<*/
+
+.tipo-cortes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}   
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-cortes {
+    width: 80%;
+    max-width: 200px;
+}
+
+
+
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<PAGINA DE PRODUCTOS COMPU<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+    .encabezado {
+        padding: 20px;
+    }
+
+    .productos {
+        flex-direction: row;
+    }
+
+    .imagen-producto {
+        width: 200px;
+        height: 200px;
+    }
+
+
+   
+    .sugerenciaTrabajos h3 {
+        text-align: center;
+        padding-top: 40px;
+        text-shadow: 5px 5px 5px rgb(199, 196, 196);
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    /*PAGINA DE TRABAJOS*/
+
+    .imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .imagenCortes {
+        width: 200px;
+        height: 200px;
+    }
+
+    .genero {
+        text-decoration-line: underline;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    div p {
+        padding-left: 20px;
+    }
+
+    .tipos {
+        padding-top: 30px;
+        font-size: 15px;
+    }
+
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<FORMULARIO DE CONTACTO COMPU<<<<<<<<<<<<<<<<<<<<<*/
+    .menu-item {
+        display: none;
+    }
+    .mensaje-final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mensaje-final p {
+        max-width: 600px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .donde-estamos p {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .como-llegar-conten {
+        padding-top: 30px;
+        text-align: center;
+        
+    }
+
+    .donde-estamos-total {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div iframe {
+        box-shadow: 1px 1px 10px rgb(227, 222, 222);
+    }
+    .por-whatsapp {
+        display: none;
+    }
+
+    /*FORMULARIO*/
+   
+    .formulario {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .tituloForm,
+    .camposForm {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        justify-content: center;
+
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    .form {
+        width: 190px;
+
+    }
+
+    .boton {
+        background-color: grey;
+        width: 100px;
+        height: 30px;
+    }
+
+    .boton:hover {
+        box-shadow: 1px 1px 5px rgb(227, 222, 222);
+    }
+
+    .botones {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+
+    }
+
+    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FOOTER COMPU QUERIE<<<<<<<<<<<<<<<<<*/
+    .lista-redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-right: 1rem;
+    }
+
+    .logos {
+        list-style: none;
+        position: sticky;
+        right: 0;
+        padding-left: 20px;
+    }
+
+    .logo-redes {
+        width: 40px;
+        filter: drop-shadow(1px 1px 1px black);
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+
+}
