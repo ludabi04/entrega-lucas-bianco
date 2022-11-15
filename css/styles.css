@@ -12,7 +12,7 @@ body {
 }
 
 /*>>>>>>>>>>>>>> QUERIE PARA CELU<<<<<<<<<<<<<<<<<*/
-.animacion-ingreso { font: 100 .5rem "Neuton"; background: #090d00; color: rgba(42, 21, 112, 0.25); text-align: center; margin: 0 }
+.animacion-ingreso { font: 100 .5rem "Neuton"; background: #090d00; color: black; text-align: center; margin: 0 }
 
 .animacion-ingreso p {	
     text-transform: uppercase;
@@ -69,14 +69,15 @@ body {
     top: 0;
     z-index: 2;
     background-image: linear-gradient(90deg, #8BC6EC 0%, #bdc1e1 100%);
+    align-items: center;
+    gap: 2.7rem;
+    justify-content:flex-end;
 }
 
 .titulo-nav {
-    text-shadow: 1px 1px 1px whitesmoke;
-}
-
-.titulo-index {
-    padding: 1rem;
+    
+    text-align: center;
+   
 }
 
 .logo_empresa {
@@ -173,10 +174,21 @@ body {
     width: 100%;
 }
 
+.flecha-arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
 .ir-arriba {
-    width: 30px;
-    margin-left: 48%;
-    padding-bottom: 1rem;
+    border: 1px solid rgb(146, 209, 230);
+    margin: 0;
+    box-shadow: 1px 1px grey;
+    background-color: lightblue;
+    width: 5%;
+    align-self: flex-start;
+    justify-content: center;  
 }
 
 
@@ -184,7 +196,6 @@ body {
 
 .productos {
     flex-direction: column;
-    padding: 3rem;
     text-align: center;
 }
 .imagen-producto {
@@ -271,7 +282,7 @@ legend {
 
 @media screen and (min-width:992px) {
 
-    .animacion-ingreso { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(42, 21, 112, 0.25); text-align: center; margin: 0 }
+    .animacion-ingreso { font: 400 1em/1.5 "Neuton"; background: #090d00; color: black; text-align: center; margin: 0 }
 
     .animacion-ingreso p {
         text-transform: uppercase;
@@ -325,6 +336,10 @@ legend {
         display: block;
         width: 100%;
         max-height: 56px;
+    }
+
+    .header {
+        justify-content: space-between;
     }
 
 
@@ -549,8 +564,8 @@ legend {
     }
 
     .imagen-cortes {
-        width: 80%;
-        max-width: 200px;
+        width: 100%;
+        height: 100%;
     }
 
     .ir-arriba {
