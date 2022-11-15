@@ -69,12 +69,8 @@ body {
     display: none;
 }
 
-.imagen-apertura {
-    justify-content: center;
-}
-
 .img-horarios {
-    width: 60%;
+    width: 40%;
     padding-top: 1rem;
 }
 
@@ -296,7 +292,7 @@ legend {
     }
 
     .img-horarios {
-        width: 40%;
+        width: 30%;
         padding-top: 1rem;
     }
     .horarios {
