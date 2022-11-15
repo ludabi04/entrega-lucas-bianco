@@ -12,6 +12,55 @@ body {
 }
 
 /*>>>>>>>>>>>>>> QUERIE PARA CELU<<<<<<<<<<<<<<<<<*/
+.animacion-ingreso { font: 100 .5rem "Neuton"; background: #090d00; color: rgba(42, 21, 112, 0.25); text-align: center; margin: 0 }
+
+.animacion-ingreso p {	
+    text-transform: uppercase;
+
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 100%
+    
+}
+
+.animacion-ingreso p span {
+
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+    background: url(../img/cielo.jpeg) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+    /* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<INDEX CELU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -100,16 +149,16 @@ body {
 .premio {
     display: none;
 }
+
 .titulo-quienes-somos {
     text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 
 .descripcion {
     text-align: center;
 }
-
-
-
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -122,6 +171,12 @@ body {
 
 .imagen-cortes {
     width: 100%;
+}
+
+.ir-arriba {
+    width: 30px;
+    margin-left: 48%;
+    padding-bottom: 1rem;
 }
 
 
@@ -140,10 +195,7 @@ body {
 
 .sugerencia-trabajos {
     text-align: center;
-
 }
-
-
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO PARA CELUS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -214,6 +266,55 @@ legend {
 /*<<<<<<<<<<<<<<<<<<<<<<<INDEX COMPU MEDIA QUERI<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media screen and (min-width:992px) {
+
+    .animacion-ingreso { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(42, 21, 112, 0.25); text-align: center; margin: 0 }
+
+    .animacion-ingreso p {
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        display: inline-block;
+        border: 4px double rgba(255,255,255,.25);
+        border-width: 4px 0;
+        padding: 1.5em 0em;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        width: 40em;
+        margin: 0 0 0 -20em;
+    }
+    
+    .animacion-ingreso p span {
+
+        font: 700 4em/1 "Oswald", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+    /* Clip Background Image */
+
+        background: url(../img/cielo.jpeg) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+    /* Animate Background Image */
+
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+    }
+
+    /* Animate Background Image */
+
+    @-webkit-keyframes aitf {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
 
     /* PAGINA PRINCIPAL QUERIE*/
     .logo_empresa {
@@ -363,12 +464,25 @@ legend {
         padding-right: 1rem;
     }
 
-    .novedades {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 4rem;
+    .titulo-novedad {
+        
         text-align: center;
         align-items: center;
+        animation-name: novedades;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+    }
+
+    @keyframes novedades {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+        
     }
 
 
@@ -418,21 +532,25 @@ legend {
 
     /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TRABAJOS PARA COMPU<<<<<<<<<<<<<<<<<<<<<<*/
 
-.tipo-cortes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}   
+    .tipo-cortes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }   
 
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-}
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
 
-.imagen-cortes {
-    width: 80%;
-    max-width: 200px;
-}
+    .imagen-cortes {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .ir-arriba {
+        display: none;
+    }
 
 
 
