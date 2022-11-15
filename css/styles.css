@@ -75,10 +75,24 @@ body {
 }
 
 .titulo-nav {
-    
     text-align: center;
-   
 }
+
+.navbar-nav {
+    position: absolute;
+    right: .5rem;
+}
+
+.nav-item {
+    background-color: rgb(195, 227, 227);
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgb(133, 133, 171);
+}
+
+
 
 .logo_empresa {
     display: none;
