@@ -362,6 +362,18 @@ legend {
     .titulo-nav,
     .nav-item {
         text-shadow: 1px 1px 1px rgb(179, 179, 237);
+        
+    }
+
+    .nav-item {
+        background-color: #8BC6EC;
+        
+        border-radius: none;
+        border: none;
+        margin: 1rem .25rem 1rem .25rem;
+        text-align: center;
+        align-content: center;
+        box-shadow: none;
     }
 
     .nav-link {
@@ -496,6 +508,8 @@ legend {
         padding-right: 1rem;
     }
 
+
+   
     .titulo-novedad {
         
         text-align: center;
